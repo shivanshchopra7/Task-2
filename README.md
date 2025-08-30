@@ -29,7 +29,7 @@ Full review & edit before submit
 
 
 Notes
-Only India-based students (mobile + PIN validation).
+Only India-based students.
 Subjects, boards, and classes are predefined options.
 PIN-to-city/state mapping is mocked client-side.
 All validation is centralized with zod; no duplicate client logic.
