@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 160 40% 98%;
+    --foreground: 210 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 15%;
+
+    /* Primary brand color → teal */
+    --primary: 170 75% 40%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 170 75% 55%;
+
+    /* Education highlight → fresh green */
+    --education: 150 60% 40%;
+    --education-foreground: 0 0% 100%;
+
+    /* Success/confirmation → green */
+    --success: 142 70% 35%;
+    --success-foreground: 0 0% 100%;
+
+    /* Accent → softer teal for CTA */
+    --accent: 170 60% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(170 75% 40%), hsl(150 60% 40%));
+    --gradient-hero: linear-gradient(180deg, hsl(160 40% 98%), hsl(150 40% 95%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(150 20% 97%));
+
+    /* Shadows */
+    --shadow-elegant: 0 10px 25px -5px hsl(170 75% 40% / 0.1);
+    --shadow-form: 0 4px 20px -2px hsl(210 20% 15% / 0.08);
+
+    /* Neutrals */
+    --secondary: 150 20% 96%;
+    --secondary-foreground: 210 20% 20%;
+
+    --muted: 150 20% 96%;
+    --muted-foreground: 210 15% 50%;
+
+    --destructive: 0 80% 55%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 150 15% 90%;
+    --input: 150 15% 90%;
+    --ring: 170 75% 40%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar theme */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 150 10% 25%;
+    --sidebar-primary: 170 75% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 170 60% 45%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 150 15% 90%;
+    --sidebar-ring: 170 75% 40%;
+  }
+
+  .dark {
+    --background: 210 20% 10%;
+    --foreground: 160 40% 98%;
+
+    --card: 210 20% 12%;
+    --card-foreground: 160 40% 98%;
+
+    --popover: 210 20% 12%;
+    --popover-foreground: 160 40% 98%;
+
+    --primary: 170 70% 50%;
+    --primary-foreground: 210 20% 10%;
+
+    --secondary: 210 15% 20%;
+    --secondary-foreground: 160 40% 98%;
+
+    --muted: 210 15% 20%;
+    --muted-foreground: 160 20% 65%;
+
+    --accent: 170 60% 50%;
+    --accent-foreground: 210 20% 10%;
+
+    --destructive: 0 65% 40%;
+    --destructive-foreground: 160 40% 98%;
+
+    --border: 210 15% 20%;
+    --input: 210 15% 20%;
+    --ring: 170 70% 50%;
+
+    --sidebar-background: 210 20% 10%;
+    --sidebar-foreground: 160 40% 95%;
+    --sidebar-primary: 170 70% 50%;
+    --sidebar-primary-foreground: 210 20% 10%;
+    --sidebar-accent: 170 60% 50%;
+    --sidebar-accent-foreground: 210 20% 10%;
+    --sidebar-border: 210 15% 20%;
+    --sidebar-ring: 170 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
