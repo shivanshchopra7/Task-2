@@ -1,5 +1,6 @@
 Enrollment Multi-Step Form
 A responsive 4-step enrollment form for students in India, built with Next.js (App Router), TypeScript, react-hook-form, zod, Tailwind CSS, and shadcn/ui. Includes bonus features like autosave drafts and PIN-based city/state auto-fill.
+
 Features
 4-step flow:
 Student Details – name, email, mobile (+91), class, board, preferred language
@@ -25,3 +26,11 @@ Landing Page
 PIN auto-fills city/state
 Dynamic subject catalog per class
 Full review & edit before submit
+
+
+Notes
+Only India-based students (mobile + PIN validation).
+Subjects, boards, and classes are predefined options.
+PIN-to-city/state mapping is mocked client-side.
+All validation is centralized with zod; no duplicate client logic.
+Routing guards prevent skipping steps.
